@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E27F92F9-82F0-4E49-B426-F60CDB18851E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PR_7_02._01</RootNamespace>
+    <AssemblyName>PR_7-02.01</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fluere1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fluere1DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fluere1DataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluereDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluereDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Novii_klient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Novii_klient.Designer.cs">
+      <DependentUpon>Form_Novii_klient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Novii_sostav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Novii_sostav.Designer.cs">
+      <DependentUpon>Form_Novii_sostav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Novii_predmet_zaloga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Novii_predmet_zaloga.Designer.cs">
+      <DependentUpon>Form_Novii_predmet_zaloga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Predmet_zaloga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Predmet_zaloga.Designer.cs">
+      <DependentUpon>Form_Predmet_zaloga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Klienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Klienti.Designer.cs">
+      <DependentUpon>Form_Klienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Sostav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Sostav.Designer.cs">
+      <DependentUpon>Form_Sostav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Dolgnosti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Dolgnosti.Designer.cs">
+      <DependentUpon>Form_Dolgnosti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_spravka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_spravka.Designer.cs">
+      <DependentUpon>Form_spravka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Novii_sotrudnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Novii_sotrudnik.Designer.cs">
+      <DependentUpon>Form_Novii_sotrudnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Novii_dogovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Novii_dogovor.Designer.cs">
+      <DependentUpon>Form_Novii_dogovor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Sotrudniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Sotrudniki.Designer.cs">
+      <DependentUpon>Form_Sotrudniki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Dogovori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Dogovori.Designer.cs">
+      <DependentUpon>Form_Dogovori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vhod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vhod.Designer.cs">
+      <DependentUpon>Form_Vhod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Dolgnosti.resx">
+      <DependentUpon>Form_Dolgnosti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Klienti.resx">
+      <DependentUpon>Form_Klienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Novii_klient.resx">
+      <DependentUpon>Form_Novii_klient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Novii_predmet_zaloga.resx">
+      <DependentUpon>Form_Novii_predmet_zaloga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Novii_sostav.resx">
+      <DependentUpon>Form_Novii_sostav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Predmet_zaloga.resx">
+      <DependentUpon>Form_Predmet_zaloga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Sostav.resx">
+      <DependentUpon>Form_Sostav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_spravka.resx">
+      <DependentUpon>Form_spravka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Dogovori.resx">
+      <DependentUpon>Form_Dogovori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Novii_dogovor.resx">
+      <DependentUpon>Form_Novii_dogovor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Novii_sotrudnik.resx">
+      <DependentUpon>Form_Novii_sotrudnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Sotrudniki.resx">
+      <DependentUpon>Form_Sotrudniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vhod.resx">
+      <DependentUpon>Form_Vhod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Fluere1DataSet.xsc">
+      <DependentUpon>Fluere1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet.xss">
+      <DependentUpon>Fluere1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet1.xsc">
+      <DependentUpon>Fluere1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet1.xss">
+      <DependentUpon>Fluere1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet10.xsc">
+      <DependentUpon>Fluere1DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet10.xss">
+      <DependentUpon>Fluere1DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet2.xsc">
+      <DependentUpon>Fluere1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet2.xss">
+      <DependentUpon>Fluere1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet3.xsc">
+      <DependentUpon>Fluere1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet3.xss">
+      <DependentUpon>Fluere1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet4.xsc">
+      <DependentUpon>Fluere1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet4.xss">
+      <DependentUpon>Fluere1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet5.xsc">
+      <DependentUpon>Fluere1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet5.xss">
+      <DependentUpon>Fluere1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet6.xsc">
+      <DependentUpon>Fluere1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet6.xss">
+      <DependentUpon>Fluere1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet7.xsc">
+      <DependentUpon>Fluere1DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet7.xss">
+      <DependentUpon>Fluere1DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet8.xsc">
+      <DependentUpon>Fluere1DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet8.xss">
+      <DependentUpon>Fluere1DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet9.xsc">
+      <DependentUpon>Fluere1DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Fluere1DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fluere1DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fluere1DataSet9.xss">
+      <DependentUpon>Fluere1DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet.xsc">
+      <DependentUpon>FluereDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet.xss">
+      <DependentUpon>FluereDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet10.xsc">
+      <DependentUpon>FluereDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet10.xss">
+      <DependentUpon>FluereDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet11.xsc">
+      <DependentUpon>FluereDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet11.xss">
+      <DependentUpon>FluereDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet111.xsc">
+      <DependentUpon>FluereDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet111.xss">
+      <DependentUpon>FluereDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet12.xsc">
+      <DependentUpon>FluereDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet12.xss">
+      <DependentUpon>FluereDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet13.xsc">
+      <DependentUpon>FluereDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet13.xss">
+      <DependentUpon>FluereDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet14.xsc">
+      <DependentUpon>FluereDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet14.xss">
+      <DependentUpon>FluereDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet15.xsc">
+      <DependentUpon>FluereDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet15.xss">
+      <DependentUpon>FluereDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet2.xsc">
+      <DependentUpon>FluereDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet2.xss">
+      <DependentUpon>FluereDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet31.xsc">
+      <DependentUpon>FluereDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet31.xss">
+      <DependentUpon>FluereDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet41.xsc">
+      <DependentUpon>FluereDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet41.xss">
+      <DependentUpon>FluereDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet5.xsc">
+      <DependentUpon>FluereDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet5.xss">
+      <DependentUpon>FluereDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet6.xsc">
+      <DependentUpon>FluereDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet6.xss">
+      <DependentUpon>FluereDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet7.xsc">
+      <DependentUpon>FluereDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet7.xss">
+      <DependentUpon>FluereDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet8.xsc">
+      <DependentUpon>FluereDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet8.xss">
+      <DependentUpon>FluereDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet9.xsc">
+      <DependentUpon>FluereDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="FluereDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluereDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FluereDataSet9.xss">
+      <DependentUpon>FluereDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
